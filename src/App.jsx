@@ -1,13 +1,14 @@
-import { useState } from 'react'
+import { Routes, Route } from "react-router-dom";
+import Landing from "./pages/LandingPage";
+import Products from "./pages/ProductsPage";
+import Cart from "./pages/CartPage";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <h3 className='bg-black text-white'>hello world</h3>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/cart" element={<Cart />} />
+    </Routes>
+  );
 }
-
-export default App
