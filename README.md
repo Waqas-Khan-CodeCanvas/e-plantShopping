@@ -103,6 +103,7 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
+```
 # 🚀 Getting Started
 
 1️⃣ **Clone the repository**  
